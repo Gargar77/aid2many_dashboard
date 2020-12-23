@@ -1,0 +1,10 @@
+.dash_main__container {
+    display: grid;
+    grid-template-rows: 90vh;
+    grid-template-columns: 30% 70%;
+}
+
+
+.dash_main__container,.dash_sidebar,.dash_content__container {
+    border: 1px red solid;
+}
