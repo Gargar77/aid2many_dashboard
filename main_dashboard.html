@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dash_header.css">
     <link rel="stylesheet" href="./dash_main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<style>
+    :root {
+    --light-purple: #a75ef0;
+    --dark-purple:#7e259f;
+    --light-gray: #9a9a9a;
+    --dark-gray: #727272;
+    --black: #1c1d1d;
+    --light-blue: #42c3e3;
+    --orange: #FC937E;
+    --green: #23ba51;
+    --sky-blue:#42c3e3;
+    --very-light-gray: #F5F5F5;
+    --dark-blue: #627DEB;
+}
+</style>
     <title>Aid2Many | Dashboard</title>
 </head>
 <body>
@@ -28,22 +45,63 @@
                 </div>
                 <div class="dash_profile__text">     
                     <p>Dave</p>
-                    <p>Active</p>
+                    <p class="dash_profile__text_status">Active</p>
                 </div>
             </div>
-            <div class="dash_bell">Bell</div>
-            <div class="dash_arrow">arrow</div>
+            <div class="dash_bell">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.851" height="24.194" viewBox="0 0 19.851 24.194">
+                    <path id="Icon_material-notifications" data-name="Icon material-notifications" d="M15.926,27.944a2.489,2.489,0,0,0,2.481-2.481H13.444A2.481,2.481,0,0,0,15.926,27.944ZM23.37,20.5V14.3c0-3.809-2.035-7-5.583-7.841V5.611a1.861,1.861,0,1,0-3.722,0v.844C10.5,7.3,8.481,10.475,8.481,14.3v6.2L6,22.981v1.241H25.851V22.981Z" transform="translate(-6 -3.75)" fill="#989898"/>
+                  </svg>                  
+            </div>
+            <div class="dash_arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27.557" height="21" viewBox="0 0 27.557 21">
+                    <path id="FontAwsome_sign-out-alt_" data-name="FontAwsome (sign-out-alt)" d="M27.175,75.408l-9.186,9.186a1.314,1.314,0,0,1-2.242-.93V78.415H8.311A1.309,1.309,0,0,1,7,77.1V71.854a1.309,1.309,0,0,1,1.312-1.312h7.436V65.292a1.315,1.315,0,0,1,2.242-.93l9.186,9.186A1.323,1.323,0,0,1,27.175,75.408ZM10.5,84.32V82.133a.658.658,0,0,0-.656-.656H5.249a1.748,1.748,0,0,1-1.75-1.75v-10.5a1.748,1.748,0,0,1,1.75-1.75H9.842a.658.658,0,0,0,.656-.656V64.636a.658.658,0,0,0-.656-.656H5.249A5.25,5.25,0,0,0,0,69.229v10.5a5.25,5.25,0,0,0,5.249,5.249H9.842A.658.658,0,0,0,10.5,84.32Z" transform="translate(0 -63.979)" fill="#989898"/>
+                  </svg>                  
+            </div>
         </div>
         
     </header>
     <main class="dash_main__container">
         <div class="dash_sidebar">
-            <div>
-                
-            </div>
+            
+                <div class="dash_sidebar__dashboard">
+                    <p>Dashboard</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.233" height="13.403" viewBox="0 0 17.233 13.403">
+                        <path id="FontAwsome_tachometer-alt_" data-name="FontAwsome (tachometer-alt)" d="M8.616,32A8.616,8.616,0,0,0,1.169,44.949a.947.947,0,0,0,.821.455H15.243a.947.947,0,0,0,.821-.455A8.616,8.616,0,0,0,8.616,32Zm0,1.915a.945.945,0,0,1,.907.708,1.613,1.613,0,0,0-.1.2l-.276.828a.933.933,0,0,1-.528.18.957.957,0,0,1,0-1.915ZM2.872,42.531a.957.957,0,1,1,.957-.957A.958.958,0,0,1,2.872,42.531Zm1.436-4.787a.957.957,0,1,1,.957-.957A.958.958,0,0,1,4.308,37.744Zm7.383-2.166-1.835,5.5a1.879,1.879,0,0,1,.409,2.406h-3.3a1.895,1.895,0,0,1,1.526-2.86l1.835-5.505a.718.718,0,0,1,1.362.454Zm.439,1.711.464-1.393a.944.944,0,0,1,.331-.067.957.957,0,1,1,0,1.915.943.943,0,0,1-.795-.455Zm2.231,5.242a.957.957,0,1,1,.957-.957A.958.958,0,0,1,14.361,42.531Z" transform="translate(0 -32)" fill="#42c3e3"/>
+                      </svg>                      
+                </div>
+                <div class="dash_sidebar__application">
+                    <p>Project Application</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.233" height="13.403" viewBox="0 0 17.233 13.403">
+                        <path id="FontAwsome_address-card_" data-name="FontAwsome (address-card)" d="M15.8,32H1.436A1.436,1.436,0,0,0,0,33.436V43.967A1.436,1.436,0,0,0,1.436,45.4H15.8a1.436,1.436,0,0,0,1.436-1.436V33.436A1.436,1.436,0,0,0,15.8,32Zm0,11.967H1.436V33.436H15.8ZM6.223,38.7a1.915,1.915,0,1,0-1.915-1.915A1.917,1.917,0,0,0,6.223,38.7Zm-2.681,3.83H8.9a.627.627,0,0,0,.67-.574v-.574a1.884,1.884,0,0,0-2.011-1.723,7.223,7.223,0,0,1-1.34.239,7.118,7.118,0,0,1-1.34-.239,1.884,1.884,0,0,0-2.011,1.723v.574A.627.627,0,0,0,3.542,42.531Zm7.228-1.915h3.351a.24.24,0,0,0,.239-.239V39.9a.24.24,0,0,0-.239-.239H10.771a.24.24,0,0,0-.239.239v.479A.24.24,0,0,0,10.771,40.616Zm0-1.915h3.351a.24.24,0,0,0,.239-.239v-.479a.24.24,0,0,0-.239-.239H10.771a.24.24,0,0,0-.239.239v.479A.24.24,0,0,0,10.771,38.7Zm0-1.915h3.351a.24.24,0,0,0,.239-.239v-.479a.24.24,0,0,0-.239-.239H10.771a.24.24,0,0,0-.239.239v.479A.24.24,0,0,0,10.771,36.787Z" transform="translate(0 -32)"/>
+                      </svg>                      
+                </div>
+            
         </div>
         <div class="dash_content__container">
-            <div class="dash_content__overview"></div>
+            <div class="dash_content__overview">
+                <div class="dash_content__overview_pending">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+                        <path id="FontAwsome_user-clock_" data-name="FontAwsome (user-clock)" d="M23.25,10.5A6.75,6.75,0,1,0,30,17.25,6.746,6.746,0,0,0,23.25,10.5Zm3,7.045A.458.458,0,0,1,25.8,18H22.955a.458.458,0,0,1-.455-.455V13.955a.458.458,0,0,1,.455-.455h.591a.458.458,0,0,1,.455.455V16.5h1.8a.458.458,0,0,1,.455.455v.591ZM15,17.25a8.221,8.221,0,0,1,.853-3.633A6.246,6.246,0,0,0,14.7,13.5h-.783a8.16,8.16,0,0,1-6.834,0H6.3A6.3,6.3,0,0,0,0,19.8v1.95A2.251,2.251,0,0,0,2.25,24H18.52A8.25,8.25,0,0,1,15,17.25ZM10.5,12a6,6,0,1,0-6-6A6,6,0,0,0,10.5,12Z" fill="#fff"/>
+                      </svg>
+                    <p class="dash_content__overview_number">350</p>
+                    <p>Pending Project Applications</p>
+                </div>
+                <div class="dash_content__overview_approved">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+                        <path id="FontAwsome_user-check_" data-name="FontAwsome (user-check)" d="M10.5,12a6,6,0,1,0-6-6A6,6,0,0,0,10.5,12Zm4.2,1.5h-.783a8.16,8.16,0,0,1-6.834,0H6.3A6.3,6.3,0,0,0,0,19.8v1.95A2.251,2.251,0,0,0,2.25,24h16.5A2.251,2.251,0,0,0,21,21.75V19.8A6.3,6.3,0,0,0,14.7,13.5ZM29.841,7.481l-1.3-1.317a.556.556,0,0,0-.787,0l-4.912,4.875L20.7,8.887a.556.556,0,0,0-.788,0L18.6,10.191a.556.556,0,0,0,0,.788l3.83,3.858a.556.556,0,0,0,.788,0l6.623-6.572A.56.56,0,0,0,29.841,7.481Z" fill="#fff"/>
+                      </svg>
+                    <p class="dash_content__overview_number">340</p>
+                    <p>Approved Project Applications</p>
+                </div>
+                <div class="dash_content__overview_rejected">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+                        <path id="FontAwsome_user-alt-slash_" data-name="FontAwsome (user-alt-slash)" d="M29.737,21.473l-11.447-8.85A6.731,6.731,0,1,0,8.512,5.072L2.161.159A.753.753,0,0,0,1.106.291L.187,1.472a.747.747,0,0,0,.131,1.05L27.9,23.836a.753.753,0,0,0,1.055-.131l.919-1.186A.743.743,0,0,0,29.737,21.473ZM9.328,15a6.3,6.3,0,0,0-6.3,6.3v.45A2.251,2.251,0,0,0,5.278,24H23.194L11.55,15Z" transform="translate(-0.029)" fill="#fff"/>
+                      </svg>
+                    <p class="dash_content__overview_number">130</p>
+                    <p>Rejected Project Applications</p>
+                </div>
+            </div>
             <div class="dash_content__list_container">
                 <div class="dash_content__list"></div>
             </div>

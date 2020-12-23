@@ -1,17 +1,6 @@
-:root {
-    --light-purple: '#A75EF0';
-    --dark-purple:'#7E259F';
-    --light-gray: '#9a9a9a';
-    --dark-gray: '#727272';
-    --black: '#1c1d1d';
-    --light-blue: '#42c3e3';
-    --orange: '#FC937E';
-    --green: '#23BA51';
-    --sky-blue: '#42C3E3';
-}
+
 
 * {
-    /* border: 1px solid red; */
     margin: 0;
 }
 
@@ -23,8 +12,10 @@
 
 .dash_logo {
     margin:  0 5%;
-    font-size: 18px;
-    color:var(--sky-blue);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+    color: var(--sky-blue);
     align-self: center;
 }
 
@@ -35,6 +26,17 @@
 .dash_search {
     width: 50%;
     display: flex;
+}
+
+.dash_search input:focus {
+    outline: none;
+    border-bottom: 1px black solid;
+}
+
+.dash_search input {
+    border: none;
+    padding-left: 10px;
+    width: 100%;
 }
 
 .dash_search__svg {
@@ -50,6 +52,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.dash_profile__text_status {
+    color: var(--green);
 }
 .dash_profile__img {
     height: 32px;
